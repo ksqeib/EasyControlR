@@ -31,14 +31,14 @@ android {
     targetCompatibility JavaVersion.VERSION_1_8
   }
 
-  task copyRelease(type: Copy) {
+  tasks.register('copyRelease', Copy) {
     dependsOn 'assembleRelease'
     from file('build/outputs/apk/release/server-release-unsigned.apk')
     into file('../app/src/main/res/raw/')
     rename('server-release-unsigned.apk', 'easycontrol_server.jar')
   }
 
-  task copyDebug(type: Copy) {
+  tasks.register('copyDebug', Copy) {
     dependsOn 'assembleDebug'
     from file("build/outputs/apk/debug/server-debug.apk")
     into file('../app/src/main/res/raw/')
