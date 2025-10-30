@@ -45,7 +45,7 @@ public class Device {
   public Device(String uuid, int type) {
     this.uuid = uuid;
     this.type = type;
-    this.name = uuid;
+    this.name = "";
   }
 
   public boolean isNetworkDevice() {

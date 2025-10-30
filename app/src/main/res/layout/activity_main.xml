@@ -44,13 +44,6 @@
           android:textSize="@dimen/largeFont"
           android:textStyle="bold" />
 
-        <TextView
-          android:layout_width="match_parent"
-          android:layout_height="wrap_content"
-          android:maxLines="1"
-          android:text="@string/main_poem"
-          android:textColor="@color/onBackgroundSecond"
-          android:textSize="@dimen/smallSmallFont" />
       </LinearLayout>
 
       <ImageView
